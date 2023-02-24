@@ -1,0 +1,140 @@
+.home-section {
+  width: 100%;
+  height: 100vh;
+  background-color: #0d192c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .main-item-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    height: 596px;
+    width: 350px;
+    border-radius: 15px;
+    background-color: #15263f;
+    .view {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      top: 0;
+      position: absolute;
+      height: 302px;
+      width: 302px;
+      border-radius: 8px;
+      background-color: #00fff8;
+      opacity: 0;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+    }
+    .view:hover {
+      opacity: 50%;
+    }
+    .main-image:hover .fa-eye {
+      opacity: 1;
+    }
+
+    .fa-eye {
+      transition: 0.3s ease-in-out;
+      position: absolute;
+      top: 45%;
+      left: 42%;
+      font-size: 40px;
+      opacity: 0;
+      color: #ffffff;
+    }
+    .main-image {
+      position: relative;
+      cursor: pointer;
+      background-position: center, center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 302px;
+      width: 302px;
+      border-radius: 8px;
+    }
+
+    .main-info {
+      height: 150px;
+      width: 302px;
+      border-radius: 8px;
+      h1 {
+        cursor: pointer;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 28px;
+        color: #ffffff;
+        text-align: left;
+        transition: 0.3s ease-in-out;
+      }
+      h1:hover {
+        color: #00fff8;
+      }
+      p {
+        font-weight: 300;
+        text-align: left;
+        color: #8bacd9;
+      }
+    }
+    .eth-wrapper {
+      display: flex;
+      justify-content: space-between;
+      .icon-price {
+        color: #00fff8;
+        .fa-ethereum {
+          margin-right: 6px;
+          font-size: 16px;
+        }
+      }
+      .icon-clock {
+        color: #8bacd9;
+        .fa-clock {
+          margin-right: 7px;
+          font-size: 16px;
+        }
+      }
+    }
+    .line {
+      background-color: #2e405a;
+      width: 300px;
+      height: 2px;
+    }
+    .creator {
+      span {
+        color: #ffffff;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+      }
+      span:hover {
+        color: #00fff8;
+      }
+      p {
+        color: #8bacd9;
+        margin-right: 5px;
+      }
+      display: flex;
+      align-items: center;
+      width: 302px;
+      height: 50px;
+      .creator-img {
+        margin-right: 7px;
+      }
+    }
+  }
+}
+
+// mobile //
+
+@media screen and (min-width: 768px) {
+  .home-section {
+    width: 100%;
+    height: 100%;
+    .main-item-wrapper {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
